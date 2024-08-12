@@ -1,6 +1,6 @@
 body{
-background: linear-gradient(to left, blue, lightblue);
-
+    background: linear-gradient(to left, blue, lightblue);
+   
 }
 form{
     display: inline-block;
@@ -14,6 +14,8 @@ form{
     backdrop-filter: blur(5px);
 
 }
+
+
 
 #formContainer{
     display: flex;
@@ -73,11 +75,3 @@ button[type="Submit"]:hover{
 
 }
 
-form:nth-child(2){
-    position: absolute;
-    top: 2%;
-    right: 5%;
-    box-shadow: none !important;
-    border: none !important;
-
-}

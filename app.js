@@ -1,4 +1,5 @@
 const express = require ('express');
+const userRoute = require('./routes/users.js');
 require('dotenv').config();
 
 
@@ -9,10 +10,11 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.use(express.static('public'));
+app.use(userRoute);
 
 
 app.listen(PORT,()  => {
-    console(`Connected on port ${PORT}`);
+    console.log(`Connected on port ${PORT}`);
 
 
 
