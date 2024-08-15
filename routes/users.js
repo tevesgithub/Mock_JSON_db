@@ -25,6 +25,7 @@ router.get('/', (req,res) => {
 
 router.post("/users", userController.createUser);
 router.post("/users/:id/update", userController.updateUser);
+router.post("/users/:id/delete", userController.deleteUser)
 
 
 module.exports = router;
